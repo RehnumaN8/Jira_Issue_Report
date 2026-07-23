@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[#INT-390] [iOS] Announcements not updating instantly after changing the status from panel</title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://fastpayrevamp.atlassian.net/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [INT-390]&nbsp;<a href="https://fastpayrevamp.atlassian.net/browse/INT-390">[iOS] Announcements not updating instantly after changing the status from panel</a>
+            <span class="subText">
+               Created: 04/May/26                   &nbsp;Updated: 04/May/26
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">To Do</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://fastpayrevamp.atlassian.net/secure/BrowseProject.jspa?id=10226">Int_FastPayDev</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                High
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:c19e038c-9bed-4860-bb49-6a511d0953ad"
+                id="word_reporter_712020:c19e038c-9bed-4860-bb49-6a511d0953ad"
+                href="https://fastpayrevamp.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Ac19e038c-9bed-4860-bb49-6a511d0953ad">
+                    Rehnuma Naher Sumona
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="6281d35f46f77e006f204a33"
+                id="word_assignee_6281d35f46f77e006f204a33"
+                href="https://fastpayrevamp.atlassian.net/secure/ViewProfile.jspa?accountId=6281d35f46f77e006f204a33">
+                    Md. Fasi Uddin Raihan
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-36223-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            BUG, iOS_Agent_Staging                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    	<tr>
+
+		<td bgcolor="#f0f0f0" width="20%" valign="top">
+			<b>Environment:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" colspan="3">
+            <p>Device: iOS 11 pro max</p>
+		</td>
+	</tr>
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+        
+            <tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Issue links:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" class="noPadding">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%" class="blank">
+                                            <tr>
+                            <td colspan="4" bgcolor="#f0f0f0">
+                                <b>Test</b><br/>
+                            </td>
+                        </tr>
+                                                                <tr>
+            <td>
+                is tested by
+            </td>
+            <td>
+                <a href="https://fastpayrevamp.atlassian.net/browse/INT-79">
+                     INT-79                 </a>
+            </td>
+            <td>
+                FastPay Announcement phase 2
+            </td>
+            <td>
+                Reviews
+            </td>
+        </tr>
+                                        </table>
+            </td>
+        </tr>
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Build Version:</b></td>
+                <td id="customfield_10043-36223-value" class="value" bgcolor="#ffffff" width="80%">      2.5.4 (65)
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Build Date:</b></td>
+                <td id="customfield_10045-36223-value" class="value" bgcolor="#ffffff" width="80%">          <span title="04/May/26"><time datetime="2026-05-04">04/May/26</time></span>
+    </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10020-36223-value" class="value" bgcolor="#ffffff" width="80%">Sprint 2</td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <h3><a name="Description"></a><b>Description</b></h3>
+
+<p>When an announcement is activated or deactivated from the panel, the change is not reflected instantly in the iOS app. Users need to minimize or close the app and reopen it (or manually refresh) to see the updated status. However, on Android, the update is reflected instantly without any extra steps.</p>
+
+<h3><a name="StepstoReproduce"></a><b>Steps to Reproduce</b></h3>
+
+<ol>
+	<li>Open the panel and activate or deactivate any announcement</li>
+	<li>Open the FP Agent App on an iOS device</li>
+	<li>Go to the Announcements section</li>
+	<li>Observe the announcement status</li>
+	<li>Minimize or close the app and reopen it (or refresh)</li>
+	<li>Check the announcement status again</li>
+</ol>
+
+
+<h3><a name="ExpectedResult"></a><b>Expected Result</b></h3>
+
+<p>Announcement status changes should reflect instantly in the iOS app without needing to restart or refresh.</p>
+
+<h3><a name="ActualResult"></a><b>Actual Result</b></h3>
+
+<p>Changes are not updated instantly; users must reopen or refresh the app to see updates.</p>
+
+<h3><a name="Severity"></a><b>Severity</b></h3>
+
+<p>Medium</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+Generated at Tue May 05 06:58:34 UTC 2026 by Rehnuma Naher Sumona using Jira 1001.0.0-SNAPSHOT#100291-rev:8866a52638297a156f6de3149ea7b8602fbbad53.
+
+</body>
+</html>

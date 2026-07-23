@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[#INT-146] [iOS] App Shows Error After Resume from Background Despite the Successful Transaction (State Mismatch)</title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://fastpayrevamp.atlassian.net/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [INT-146]&nbsp;<a href="https://fastpayrevamp.atlassian.net/browse/INT-146">[iOS] App Shows Error After Resume from Background Despite the Successful Transaction (State Mismatch)</a>
+            <span class="subText">
+               Created: 09/Apr/26                   &nbsp;Updated: 19/Apr/26
+
+                                                    &nbsp;Resolved: 19/Apr/26
+                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Done</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://fastpayrevamp.atlassian.net/secure/BrowseProject.jspa?id=10226">Int_FastPayDev</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:c19e038c-9bed-4860-bb49-6a511d0953ad"
+                id="word_reporter_712020:c19e038c-9bed-4860-bb49-6a511d0953ad"
+                href="https://fastpayrevamp.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Ac19e038c-9bed-4860-bb49-6a511d0953ad">
+                    Rehnuma Naher Sumona
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:a0fa0b8f-847a-46cd-9d2e-21cd2c158755"
+                id="word_assignee_712020:a0fa0b8f-847a-46cd-9d2e-21cd2c158755"
+                href="https://fastpayrevamp.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Aa0fa0b8f-847a-46cd-9d2e-21cd2c158755">
+                    Md. Sohanur Rahman
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                            Done
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-35120-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            BUG, iOS_Agent_Staging                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            0 minutes
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            1 day, 3 hours
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    	<tr>
+
+		<td bgcolor="#f0f0f0" width="20%" valign="top">
+			<b>Environment:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" colspan="3">
+            <p>iOS</p>
+		</td>
+	</tr>
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://fastpayrevamp.atlassian.net/images/icons/attach/file.gif" height="16" width="16" border="0" alt="File">
+                    ScreenRecording_04-09-2026 14-38-20_1.MP4 &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+            <tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Issue links:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" class="noPadding">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%" class="blank">
+                                            <tr>
+                            <td colspan="4" bgcolor="#f0f0f0">
+                                <b>Test</b><br/>
+                            </td>
+                        </tr>
+                                                                <tr>
+            <td>
+                is tested by
+            </td>
+            <td>
+                <a href="https://fastpayrevamp.atlassian.net/browse/INT-97">
+                     INT-97                 </a>
+            </td>
+            <td>
+                Agent Application: Q2 2026
+            </td>
+            <td>
+                To Do
+            </td>
+        </tr>
+            <tr>
+            <td>
+                is tested by
+            </td>
+            <td>
+                <a href="https://fastpayrevamp.atlassian.net/browse/INT-123">
+                     <strike>INT-123</strike>                 </a>
+            </td>
+            <td>
+                [QA] Test  Suraat Al Dhawaa cash coll...
+            </td>
+            <td>
+                Done
+            </td>
+        </tr>
+                                        </table>
+            </td>
+        </tr>
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Build Version:</b></td>
+                <td id="customfield_10043-35120-value" class="value" bgcolor="#ffffff" width="80%">      2.5.4 (45)
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Build Date:</b></td>
+                <td id="customfield_10045-35120-value" class="value" bgcolor="#ffffff" width="80%">          <span title="30/Mar/26"><time datetime="2026-03-30">30/Mar/26</time></span>
+    </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10020-35120-value" class="value" bgcolor="#ffffff" width="80%">Sprint 1, Sprint 2</td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>After entering PIN and initiating a transaction, if the user minimizes the app and waits for some time, then reopens the app, an <b>“Error Occurred”</b> message is displayed.</p>
+
+<p>However, the transaction is actually processed successfully in the backend. Additionally, when the user tries to perform the same transaction again, the system prevents it as a <b>duplicate transaction</b>.</p>
+
+<p>This indicates a mismatch between the <b>frontend app state</b> and the <b>backend transaction status</b>.</p>
+
+<h3><a name="StepstoReproduce"></a><b>Steps to Reproduce</b></h3>
+
+<ol>
+	<li>Initiate a transaction</li>
+	<li>Enter PIN and proceed</li>
+	<li>Minimize the app immediately</li>
+	<li>Wait for a few seconds</li>
+	<li>Reopen the app</li>
+	<li>Observe the error message</li>
+	<li>Retry same transaction → blocked as duplicate</li>
+</ol>
+
+
+<h3><a name="ExpectedBehavior"></a><b>Expected Behavior</b></h3>
+
+<ul>
+	<li>App should correctly sync transaction status after resume.</li>
+	<li>If transaction is successful, a <b>success confirmation</b> should be shown.</li>
+	<li>No misleading error message should appear.</li>
+</ul>
+
+
+<h3><a name="ActualBehavior"></a><b>Actual Behavior</b></h3>
+
+<ul>
+	<li>App shows <b>“Error Occurred”</b> after resuming from background.</li>
+	<li>Transaction is actually <b>successful</b>.</li>
+	<li>Retry attempt is blocked as <b>duplicate transaction</b>.</li>
+</ul>
+
+
+<h3><a name="Severity"></a><b>Severity</b></h3>
+
+<p>High</p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-27055"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="60b72eff3aa60500684ffbb4"
+                id="word_commented_60b72eff3aa60500684ffbb4"
+                href="https://fastpayrevamp.atlassian.net/secure/ViewProfile.jspa?accountId=60b72eff3aa60500684ffbb4">
+                    Sajjad Hossain
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">09/Apr/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-27055"><td bgcolor="#ffffff">
+            <p>This issue is occurring across all transactional features within the Agent application.</p>
+
+<p>FYI <a href="https://fastpayrevamp.atlassian.net/secure/ViewProfile.jspa?accountId=61813335209722007191ff89" class="user-hover" rel="61813335209722007191ff89" data-account-id="61813335209722007191ff89" accountid="61813335209722007191ff89" rel="noreferrer">Abdul Gafur</a> bhai <a href="https://fastpayrevamp.atlassian.net/secure/ViewProfile.jspa?accountId=6281d35f46f77e006f204a33" class="user-hover" rel="6281d35f46f77e006f204a33" data-account-id="6281d35f46f77e006f204a33" accountid="6281d35f46f77e006f204a33" rel="noreferrer">Md. Fasi Uddin Raihan</a> </p>
+        </td></tr>
+            </table>
+Generated at Tue May 05 07:01:16 UTC 2026 by Rehnuma Naher Sumona using Jira 1001.0.0-SNAPSHOT#100291-rev:8866a52638297a156f6de3149ea7b8602fbbad53.
+
+</body>
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>[#INT-200] [Android]&quot;Pay Now&quot; button is unresponsive on NASS ePayment order description page</title>
+    <meta http-equiv="Content-Type" Content="application/vnd.ms-word; charset=UTF-8">
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://fastpayrevamp.atlassian.net/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+</head>
+<body>
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [INT-200]&nbsp;<a href="https://fastpayrevamp.atlassian.net/browse/INT-200">[Android]&quot;Pay Now&quot; button is unresponsive on NASS ePayment order description page</a>
+            <span class="subText">
+               Created: 15/Apr/26                   &nbsp;Updated: 19/Apr/26
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">Reviews</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://fastpayrevamp.atlassian.net/secure/BrowseProject.jspa?id=10226">Int_FastPayDev</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </table>
+
+<br />
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top"  width="30%" >
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap>
+                High
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top"  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:c19e038c-9bed-4860-bb49-6a511d0953ad"
+                id="word_reporter_712020:c19e038c-9bed-4860-bb49-6a511d0953ad"
+                href="https://fastpayrevamp.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Ac19e038c-9bed-4860-bb49-6a511d0953ad">
+                    Rehnuma Naher Sumona
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap  width="30%" >
+                                        
+                
+        
+            <a class="user-hover" rel="712020:bfb7507d-c34c-4286-8cf6-b90bbff9e148"
+                id="word_assignee_712020:bfb7507d-c34c-4286-8cf6-b90bbff9e148"
+                href="https://fastpayrevamp.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Abfb7507d-c34c-4286-8cf6-b90bbff9e148">
+                    Md Mehedi Hasan
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap>
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-35372-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap>
+                            Android_Personal_Stag, BUG, Nass_ePayment                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            0 minutes
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            1 hour, 10 minutes
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    	<tr>
+
+		<td bgcolor="#f0f0f0" width="20%" valign="top">
+			<b>Environment:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" colspan="3">
+            <p>Desktop: HP, Android version: 13 (Narzo)</p>
+		</td>
+	</tr>
+    </table>
+
+
+
+    <br />
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tr>
+            <td bgcolor="#f0f0f0" width=20% valign=top>
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="https://fastpayrevamp.atlassian.net/images/icons/attach/file.gif" height="16" width="16" border="0" alt="File">
+                    screen-20260415-121117.mp4 &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+            <tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Issue links:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" class="noPadding">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%" class="blank">
+                                            <tr>
+                            <td colspan="4" bgcolor="#f0f0f0">
+                                <b>Test</b><br/>
+                            </td>
+                        </tr>
+                                                                <tr>
+            <td>
+                is tested by
+            </td>
+            <td>
+                <a href="https://fastpayrevamp.atlassian.net/browse/INT-11">
+                     INT-11                 </a>
+            </td>
+            <td>
+                Nass e-payment integration in persona...
+            </td>
+            <td>
+                Reviews
+            </td>
+        </tr>
+            <tr>
+            <td>
+                is tested by
+            </td>
+            <td>
+                <a href="https://fastpayrevamp.atlassian.net/browse/INT-127">
+                     INT-127                 </a>
+            </td>
+            <td>
+                [Android] Design &amp; Backend API integr...
+            </td>
+            <td>
+                Reviews
+            </td>
+        </tr>
+            <tr>
+            <td>
+                is tested by
+            </td>
+            <td>
+                <a href="https://fastpayrevamp.atlassian.net/browse/INT-130">
+                     INT-130                 </a>
+            </td>
+            <td>
+                [QA] Test Nass e-payment end to end t...
+            </td>
+            <td>
+                Reviews
+            </td>
+        </tr>
+                                        </table>
+            </td>
+        </tr>
+    
+
+
+    
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Build Version:</b></td>
+                <td id="customfield_10043-35372-value" class="value" bgcolor="#ffffff" width="80%">      2.3.86-staging (226) Branch: 2026/nass_e_payment
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Build Date:</b></td>
+                <td id="customfield_10045-35372-value" class="value" bgcolor="#ffffff" width="80%">          <span title="13/Apr/26"><time datetime="2026-04-13">13/Apr/26</time></span>
+    </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10020-35372-value" class="value" bgcolor="#ffffff" width="80%">Sprint 1</td>
+            </tr>
+            </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+        <td id="descriptionArea">
+            <p>On the NASS ePayment <b>order description page</b>, the <b>"Pay Now" button is visible but does not respond when tapped</b>.</p>
+
+<p>Even after clicking the button, no action is triggered—user is not navigated to the next step (PIN/payment processing), and no loader or error message is shown. This prevents users from completing the payment flow.</p>
+
+<h2><a name="StepstoReproduce%3A"></a>Steps to Reproduce:</h2>
+
+<ol>
+	<li>Open FastPay Personal app</li>
+	<li>Navigate to <b>NASS ePayment</b></li>
+	<li>Enter valid bill / customer details</li>
+	<li>Proceed to the <b>order description page</b></li>
+	<li>Tap on the <b>"Pay Now" button</b></li>
+</ol>
+
+
+<h2><a name="ActualResult%3A"></a>Actual Result:</h2>
+
+<ul>
+	<li>"Pay Now" button does not respond</li>
+	<li>No navigation / no loader / no feedback</li>
+	<li>User remains stuck on the same page</li>
+</ul>
+
+
+<h2><a name="ExpectedResult%3A"></a>Expected Result:</h2>
+
+<ul>
+	<li>On tapping "Pay Now", system should:
+	<ul>
+		<li>Trigger next step (PIN entry / processing)</li>
+		<li>Show loader or feedback</li>
+		<li>Proceed with payment flow</li>
+	</ul>
+	</li>
+</ul>
+
+
+<h2><a name="Severity%3A"></a>Severity:</h2>
+
+<p><b>High</b></p>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+    <br/>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap align="center">
+            &nbsp;<font color="#ffffff"><b>Comments</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="grid" style="margin: 0;">
+                <tr id="comment-header-27405"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="712020:bfb7507d-c34c-4286-8cf6-b90bbff9e148"
+                id="word_commented_712020:bfb7507d-c34c-4286-8cf6-b90bbff9e148"
+                href="https://fastpayrevamp.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Abfb7507d-c34c-4286-8cf6-b90bbff9e148">
+                    Md Mehedi Hasan
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">15/Apr/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-27405"><td bgcolor="#ffffff">
+            <p>This issue originates from the NASS payment web URL; we are unable to take action on it.</p>
+
+<p><a href="https://fastpayrevamp.atlassian.net/secure/ViewProfile.jspa?accountId=61813335209722007191ff89" class="user-hover" rel="61813335209722007191ff89" data-account-id="61813335209722007191ff89" accountid="61813335209722007191ff89" rel="noreferrer">Abdul Gafur</a> bhai, <a href="https://fastpayrevamp.atlassian.net/secure/ViewProfile.jspa?accountId=60b72eff3aa60500684ffbb4" class="user-hover" rel="60b72eff3aa60500684ffbb4" data-account-id="60b72eff3aa60500684ffbb4" accountid="60b72eff3aa60500684ffbb4" rel="noreferrer">Sajjad Hossain</a> bhai</p>
+        </td></tr>
+                <tr id="comment-header-27547"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="712020:c19e038c-9bed-4860-bb49-6a511d0953ad"
+                id="word_commented_712020:c19e038c-9bed-4860-bb49-6a511d0953ad"
+                href="https://fastpayrevamp.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Ac19e038c-9bed-4860-bb49-6a511d0953ad">
+                    Rehnuma Naher Sumona
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">19/Apr/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-27547"><td bgcolor="#ffffff">
+            <p><a href="https://fastpayrevamp.atlassian.net/secure/ViewProfile.jspa?accountId=6065a3068a0f7c006fd59ddb" class="user-hover" rel="6065a3068a0f7c006fd59ddb" data-account-id="6065a3068a0f7c006fd59ddb" accountid="6065a3068a0f7c006fd59ddb" rel="noreferrer">Sabbir Ahmed</a> bhai This issue needs to be resolved from the NASS ePayment side. Should I mark this as Done?</p>
+        </td></tr>
+                <tr id="comment-header-27555"><td bgcolor="#f0f0f0">
+            Comment by  
+                                                    
+                
+        
+            <a class="user-hover" rel="712020:c19e038c-9bed-4860-bb49-6a511d0953ad"
+                id="word_commented_712020:c19e038c-9bed-4860-bb49-6a511d0953ad"
+                href="https://fastpayrevamp.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3Ac19e038c-9bed-4860-bb49-6a511d0953ad">
+                    Rehnuma Naher Sumona
+                </a>
+
+                                        <font size="-2">
+            [
+                <font color="#336699">19/Apr/26</font>
+
+                            ]
+            </font>
+
+        </td></tr>
+        <tr id="comment-body-27555"><td bgcolor="#ffffff">
+            <p><a href="https://fastpayrevamp.atlassian.net/secure/ViewProfile.jspa?accountId=61813335209722007191ff89" class="user-hover" rel="61813335209722007191ff89" data-account-id="61813335209722007191ff89" accountid="61813335209722007191ff89" rel="noreferrer">Abdul Gafur</a> bhai…. Issue has been marked as blocker </p>
+        </td></tr>
+            </table>
+Generated at Tue May 05 07:03:40 UTC 2026 by Rehnuma Naher Sumona using Jira 1001.0.0-SNAPSHOT#100291-rev:8866a52638297a156f6de3149ea7b8602fbbad53.
+
+</body>
+</html>
